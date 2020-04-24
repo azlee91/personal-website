@@ -23,7 +23,7 @@ h1.section-heading {
 
 /* Header section */
 header {
-  background-image: url("pics/site_header.jpg");
+  background-image: url("images/site_header.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -52,7 +52,16 @@ header {
   transform: translate(-50%, 0%) rotate(45deg);
   animation: fade_arrow_down 1.8s ease-in-out infinite;
 }
-/* End Header section */
+
+a.scroll-icon-click::after{
+  content: "";
+  bottom: 4vh;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  transform: translate(-45%, 0%) rotate(45deg);
+  z-index: 999;
+}
 
 /* Animation Keyframe Section */
 @keyframes fade_arrow_down {
@@ -102,7 +111,7 @@ header {
 .navbar a {
   color: #fff;
   text-decoration: none;
-  font: 20px Raleway;
+  font: 16px Raleway;
   margin: 0px 10px;
   padding: 10px 10px;
   position: relative;
@@ -124,8 +133,11 @@ header {
 
 .navbar-item {
   display: inline-block;
+  margin: 10px 0;
 }
 /* End navbar */
+
+/* End Header section */
 
 /* About Section */
 #about {
@@ -133,13 +145,19 @@ header {
 }
 
 img.profile-pic {
-  margin-right: 2em;
-  float: left;
-  width: 225px;
-  height: 225px;
   border-radius: 50%;
   border: 5px solid #fff;
   box-shadow: 0 0 0 7px #344155;
+}
+
+div.profile-pic-container {
+  margin-left: 0;
+  margin-right: 4%;
+  margin-bottom: 4%;
+}
+
+#about-blurb {
+  font-size: 2.0rem;
 }
 /* End About Section */
 
@@ -163,5 +181,6 @@ ul li i {
 .material-icons.md-30 {
   font-size: 24px;
   padding-bottom: 3px;
+  margin-right: 3px;
 }
 /* End Resume Section */

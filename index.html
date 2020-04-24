@@ -9,7 +9,7 @@
   </head>
 
   <body>
-    <header>
+    <header id="header">
       <div class="container">
         <div id="main-header" class="row">
           <div class="logo-main">
@@ -19,6 +19,9 @@
         <div id="navbar-row" class="row">
           <nav class="navbar pullUp">
             <ul class="navbar-list">
+              <li class="navbar-item">
+                <a class="smoothscroll" href="#header">Home</a>
+              </li>
               <li class="navbar-item">
                 <a class="smoothscroll" href="#about">About</a>
               </li>
@@ -35,29 +38,32 @@
           </nav>
         </div>
       </div>
-      <a class="smoothscroll" href="#about">
+      <a class="smoothscroll scroll-icon-click" href="#about">
         <div class="scroll-icon"></div>
       </a>
     </header>
-    
+
     <!-- About Section -->
     <section id="about">
       <div class="container">
         <div class="row">
           <h1 class="section-heading">About</h1>
           <div class="separator"></div>
-          <img class="profile-pic" src="pics/profile_pic_cropped.jpg" />
-          <p class="about-blurb">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus
-            metus aliquam eleifend mi in nulla posuere sollicitudin. Eu
-            scelerisque felis imperdiet proin fermentum leo vel orci porta.
-            Malesuada fames ac turpis egestas sed tempus urna et. Aliquam etiam
-            erat velit scelerisque in dictum non consectetur. Pulvinar etiam non
-            quam lacus suspendisse faucibus. Tempus imperdiet nulla malesuada
-            pellentesque elit eget gravida. Sit amet mattis vulputate enim nulla
-            aliquet porttitor lacus.
-          </p>
+          <div class="four columns profile-pic-container">
+            <img
+              class="profile-pic u-max-full-width"
+              src="images/profile_pic_sd.png"
+            />
+          </div>
+          <div class="seven columns">
+            <p id="about-blurb">
+              Hi, my name is Alvin lee and I am a software engineer based in San
+              Diego, California. I love tackling tough technological problems
+              while also learning new skills along the way. Keeping up with and
+              playing with the latest tech tools is what I like to do in my free
+              time.
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -70,20 +76,25 @@
           <div class="separator"></div>
         </div>
         <div class="row">
-          <div class="six columns">
+          <div class="one-half column">
             <h3>Languages</h3>
             <ul class="skills-list">
               <li><i class="material-icons md-30">label_important</i>Python</li>
               <li><i class="material-icons md-30">label_important</i>SQL</li>
               <li><i class="material-icons md-30">label_important</i>HTML</li>
               <li><i class="material-icons md-30">label_important</i>CSS</li>
-              <li><i class="material-icons md-30">label_important</i>Javascript</li>
+              <li>
+                <i class="material-icons md-30">label_important</i>Javascript
+              </li>
             </ul>
           </div>
-          <div class="six columns">
+          <div class="one-half column">
             <h3>Technology</h3>
             <ul class="skills-list">
-              <li><i class="material-icons md-30">label_important</i>Unix Command Line</li>
+              <li>
+                <i class="material-icons md-30">label_important</i>Unix Command
+                Line
+              </li>
               <li><i class="material-icons md-30">label_important</i>Flask</li>
               <li><i class="material-icons md-30">label_important</i>REST</li>
               <li><i class="material-icons md-30">label_important</i>GIT</li>
@@ -99,6 +110,6 @@
       integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
       crossorigin="anonymous"
     ></script>
-    <script src="methods.js"></script>
+    <script src="site_methods.js"></script>
   </body>
 </html>
