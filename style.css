@@ -17,6 +17,8 @@ h1.section-heading {
   width: 96px;
   height: 2px;
   background: #000; /* Fallback for browsers that don't support */
+  background: -moz-linear-gradient(135deg, #425365 0%, #67cbec 100%);
+  background: -webkit-linear-gradient(135deg, #425365 0%, #67cbec 100%);
   background: linear-gradient(135deg, #425365 0%, #67cbec 100%);
 }
 /* End Common Styling */
@@ -53,7 +55,7 @@ header {
   animation: fade_arrow_down 1.8s ease-in-out infinite;
 }
 
-a.scroll-icon-click::after{
+a.scroll-icon-click::after {
   content: "";
   bottom: 4vh;
   position: absolute;
@@ -89,7 +91,7 @@ a.scroll-icon-click::after{
   z-index: 999;
   width: 100%;
   left: 0;
-  transition: background .2s ease-in;
+  transition: background 0.2s ease-in;
 }
 
 .pullUp a:before {
@@ -157,30 +159,129 @@ div.profile-pic-container {
 }
 
 #about-blurb {
-  font-size: 2.0rem;
+  font-size: 2rem;
 }
 /* End About Section */
 
 /* Resume Section */
 #resume {
   padding: 50px 0 100px 0;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
+}
+
+.skillbar {
+  margin-bottom: 1.66em;
+}
+
+.skillbar h4 {
+  font-size: 16px;
+  text-transform: none;
+  margin-bottom: 7px;
+  margin-bottom: 0.33em;
+}
+
+.skillbarContainer {
+  width: 100%;
+  height: 8px;
+  background: #e1e1e1;
+  overflow: hidden;
+}
+
+.skillbarValue {
+  height: 8px;
+  float: left;
+  background: #425365; /* Fallback for browsers that don't support */
+  background: -moz-linear-gradient(135deg, #425365 0%, #67cbec 100%);
+  background: -webkit-linear-gradient(135deg, #425365 0%, #67cbec 100%);
+  background: linear-gradient(135deg, #425365 0%, #67cbec 100%);
+}
+
+.value-00 {
+  width: 0;
+}
+
+.value-10 {
+  width: 10%;
+}
+
+.value-20 {
+  width: 20%;
+}
+
+.value-30 {
+  width: 30%;
+}
+
+.value-40 {
+  width: 40%;
+}
+
+.value-50 {
+  width: 50%;
+}
+
+.value-60 {
+  width: 60%;
+}
+
+.value-70 {
+  width: 70%;
+}
+
+.value-80 {
+  width: 80%;
+}
+
+.value-90 {
+  width: 90%;
+}
+
+.value-95 {
+  width: 95%;
+}
+
+.value-100 {
+  width: 100%;
 }
 
 ul.skills-list {
   list-style: none;
   font-size: 20px;
-  font-weight: bold;
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-ul li i {
-  color: #23cc94;
-  vertical-align: middle;
+ul.skills-list li {
+  display: inline-block;
 }
 
-.material-icons.md-30 {
+ion-icon {
   font-size: 24px;
-  padding-bottom: 3px;
+  vertical-align: middle;
+  padding-bottom: 4px;
   margin-right: 3px;
+  color: #425365;
+}
+
+ion-icon.python-logo {
+  color: #ffa60088;
+}
+
+ion-icon.html-logo {
+  color: #ee5109b0;
+}
+
+ion-icon.css-logo {
+  color: #1d9ed1a1;
+}
+
+ion-icon.js-logo {
+  color: #f0db4f;
+}
+
+ion-icon.sql-logo {
+  color: #0079d6;
 }
 /* End Resume Section */

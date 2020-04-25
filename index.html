@@ -6,6 +6,9 @@
     <link rel="stylesheet" type="text/css" href="dist/skeleton/normalize.css" />
     <link rel="stylesheet" type="text/css" href="dist/skeleton/skeleton.css" />
     <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
   </head>
 
   <body>
@@ -59,9 +62,11 @@
             <p id="about-blurb">
               Hi, my name is Alvin lee and I am a software engineer based in San
               Diego, California. I love tackling tough technological problems
-              while also learning new skills along the way. Keeping up with and
+              while also learning new skills along the way. Keeping up and
               playing with the latest tech tools is what I like to do in my free
               time.
+              <br><br>
+              I am also a hobbyist photographer. Check out some of my photos below!
             </p>
           </div>
         </div>
@@ -76,35 +81,72 @@
           <div class="separator"></div>
         </div>
         <div class="row">
-          <div class="one-half column">
-            <h3>Languages</h3>
-            <ul class="skills-list">
-              <li><i class="material-icons md-30">label_important</i>Python</li>
-              <li><i class="material-icons md-30">label_important</i>SQL</li>
-              <li><i class="material-icons md-30">label_important</i>HTML</li>
-              <li><i class="material-icons md-30">label_important</i>CSS</li>
-              <li>
-                <i class="material-icons md-30">label_important</i>Javascript
-              </li>
-            </ul>
+          <center><h3>Skills</h3></center>
+          <div class="eight offset-by-two columns">
+            <div class="skillbar">
+              <h4><ion-icon class="python-logo" name="logo-python"></ion-icon>Python</h4>
+              <div class="skillbarContainer">
+                <div class="skillbarValue value-95"></div>
+              </div>
+            </div>
+            <div class="skillbar">
+              <h4><ion-icon class="sql-logo" name="server-outline"></ion-icon></ion-icon>SQL (PostgreSQL, MySQL)</h4>
+              <div class="skillbarContainer">
+                <div class="skillbarValue value-40"></div>
+              </div>
+            </div>
+            <div class="skillbar">
+              <h4><ion-icon class="html-logo" name="logo-html5"></ion-icon></ion-icon>HTML</h4>
+              <div class="skillbarContainer">
+                <div class="skillbarValue value-20"></div>
+              </div>
+            </div>
+            <div class="skillbar">
+              <h4><ion-icon class="js-logo" name="logo-javascript"></ion-icon></ion-icon>Javascript</h4>
+              <div class="skillbarContainer">
+                <div class="skillbarValue value-20"></div>
+              </div>
+            </div>
+            <div class="skillbar">
+              <h4><ion-icon class="css-logo" name="logo-css3"></ion-icon></ion-icon>CSS</h4>
+              <div class="skillbarContainer">
+                <div class="skillbarValue value-10"></div>
+              </div>
+            </div>
           </div>
-          <div class="one-half column">
-            <h3>Technology</h3>
+        </div>
+        <div class="row">
+          <center><h3>Technology</h3></center>
+          <div class="eight offset-by-two columns">
             <ul class="skills-list">
-              <li>
-                <i class="material-icons md-30">label_important</i>Unix Command
-                Line
-              </li>
-              <li><i class="material-icons md-30">label_important</i>Flask</li>
-              <li><i class="material-icons md-30">label_important</i>REST</li>
-              <li><i class="material-icons md-30">label_important</i>GIT</li>
-              <li><i class="material-icons md-30">label_important</i>Docker</li>
+              <li><ion-icon name="play-circle-outline"></ion-icon>Unix CLi</li>
+              <li><ion-icon name="play-circle-outline"></ion-icon>Flask</li>
+              <li><ion-icon name="play-circle-outline"></ion-icon>RESTApi</li>
+              <li><ion-icon name="play-circle-outline"></ion-icon>GIT</li>
+              <li><ion-icon name="play-circle-outline"></ion-icon>Docker</li>
+              <li><ion-icon name="play-circle-outline"></ion-icon>GraphQL</li>
+              <li><ion-icon name="play-circle-outline"></ion-icon>AWS EC2</li>
+              <li><ion-icon name="play-circle-outline"></ion-icon>AWS Lambda</li>
+              <li><ion-icon name="play-circle-outline"></ion-icon>AWS RDS</li>
+              <li><ion-icon name="play-circle-outline"></ion-icon>AWS DynamoDB</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Photography Section -->
+    <section id="photography">
+      <div class="container">
+        <div class="row">
+          <h1 class="section-heading">Photography</h1>
+          <div class="separator"></div>
+        </div>
+        <div class="row">
+          </div>
+        </div>
+      </div>
+    </section>
     <script
       src="https://code.jquery.com/jquery-3.5.0.min.js"
       integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
