@@ -285,3 +285,130 @@ ion-icon.sql-logo {
   color: #0079d6;
 }
 /* End Resume Section */
+
+/* Photography Section */
+#photography {
+  padding: 50px 0 100px 0;
+}
+
+.photo-container {
+  max-width: 960px;
+  position: relative;
+  margin: auto;
+}
+
+.slideshow-image {
+  width: 100%;
+}
+
+.photo-slide {
+  display: none;
+}
+
+.photo-slide:hover .photo-caption {
+  opacity: 1;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -28px;
+  padding: 18px;
+  font-weight: bold;
+  font-size: 24px;
+  transition: 0.6s ease;
+  user-select: none;
+}
+
+ion-icon.next-arrow, ion-icon.arrow {
+  margin-right: 0;
+  color: white;
+}
+
+.next {
+  right: 0;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.photo-caption {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 0;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  background-color: #00000093;
+  opacity: 0;
+  transition: .5s ease;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* End Photography Section */
+
+/* Contact Section */
+#contact {
+  padding: 50px 0 100px 0;
+  background-color: #f5f5f5;
+}
+
+/* End Contact Section */
+
+/* Footer */
+footer {
+  min-height: 50px;
+  padding: 20px 0 20px 0;
+  background: #425365;
+  background: -moz-linear-gradient(-45deg, #425365 0%, #67cbec 100%);
+  background: -webkit-linear-gradient(-45deg, #425365 0%, #67cbec 100%);
+  background: linear-gradient(135deg, #425365 0%, #67cbec 100%);
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.md-24 {
+  font-size: 24px;
+  vertical-align: middle;
+  padding-bottom: 2px;
+  margin-right: 3px;
+  color: #fff;
+}
+
+ion-icon.contact {
+  margin-right: 5px;
+  padding-bottom: 0;
+  font-size: 24px;
+  color: #fff;
+}
+/* End Footer */

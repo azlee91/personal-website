@@ -7,8 +7,14 @@
     <link rel="stylesheet" type="text/css" href="dist/skeleton/skeleton.css" />
     <link rel="stylesheet" type="text/css" href="style.css" />
 
-    <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"
+    ></script>
   </head>
 
   <body>
@@ -65,8 +71,9 @@
               while also learning new skills along the way. Keeping up and
               playing with the latest tech tools is what I like to do in my free
               time.
-              <br><br>
-              I am also a hobbyist photographer. Check out some of my photos below!
+              <br /><br />
+              I am also a hobbyist photographer. Check out some of my photos
+              below!
             </p>
           </div>
         </div>
@@ -84,31 +91,44 @@
           <center><h3>Skills</h3></center>
           <div class="eight offset-by-two columns">
             <div class="skillbar">
-              <h4><ion-icon class="python-logo" name="logo-python"></ion-icon>Python</h4>
+              <h4>
+                <ion-icon class="python-logo" name="logo-python"></ion-icon
+                >Python
+              </h4>
               <div class="skillbarContainer">
                 <div class="skillbarValue value-95"></div>
               </div>
             </div>
             <div class="skillbar">
-              <h4><ion-icon class="sql-logo" name="server-outline"></ion-icon></ion-icon>SQL (PostgreSQL, MySQL)</h4>
+              <h4>
+                <ion-icon class="sql-logo" name="server-outline"></ion-icon>SQL
+                (PostgreSQL, MySQL)
+              </h4>
               <div class="skillbarContainer">
                 <div class="skillbarValue value-40"></div>
               </div>
             </div>
             <div class="skillbar">
-              <h4><ion-icon class="html-logo" name="logo-html5"></ion-icon></ion-icon>HTML</h4>
+              <h4>
+                <ion-icon class="html-logo" name="logo-html5"></ion-icon>HTML
+              </h4>
               <div class="skillbarContainer">
                 <div class="skillbarValue value-20"></div>
               </div>
             </div>
             <div class="skillbar">
-              <h4><ion-icon class="js-logo" name="logo-javascript"></ion-icon></ion-icon>Javascript</h4>
+              <h4>
+                <ion-icon class="js-logo" name="logo-javascript"></ion-icon
+                >Javascript
+              </h4>
               <div class="skillbarContainer">
                 <div class="skillbarValue value-20"></div>
               </div>
             </div>
             <div class="skillbar">
-              <h4><ion-icon class="css-logo" name="logo-css3"></ion-icon></ion-icon>CSS</h4>
+              <h4>
+                <ion-icon class="css-logo" name="logo-css3"></ion-icon>CSS
+              </h4>
               <div class="skillbarContainer">
                 <div class="skillbarValue value-10"></div>
               </div>
@@ -126,9 +146,13 @@
               <li><ion-icon name="play-circle-outline"></ion-icon>Docker</li>
               <li><ion-icon name="play-circle-outline"></ion-icon>GraphQL</li>
               <li><ion-icon name="play-circle-outline"></ion-icon>AWS EC2</li>
-              <li><ion-icon name="play-circle-outline"></ion-icon>AWS Lambda</li>
+              <li>
+                <ion-icon name="play-circle-outline"></ion-icon>AWS Lambda
+              </li>
               <li><ion-icon name="play-circle-outline"></ion-icon>AWS RDS</li>
-              <li><ion-icon name="play-circle-outline"></ion-icon>AWS DynamoDB</li>
+              <li>
+                <ion-icon name="play-circle-outline"></ion-icon>AWS DynamoDB
+              </li>
             </ul>
           </div>
         </div>
@@ -143,10 +167,125 @@
           <div class="separator"></div>
         </div>
         <div class="row">
+          <div class="twelve columns">
+            <div class="photo-container">
+              <!-- Photos -->
+              <div class="photo-slide fade">
+                <img class="slideshow-image" src="images/Krabi_landscape.jpg" />
+                <div class="photo-caption">Krabi, Thailand</div>
+              </div>
+
+              <div class="photo-slide fade">
+                <img
+                  class="slideshow-image"
+                  src="images/Krabi_landscape_2.jpg"
+                />
+                <div class="photo-caption">Krabi, Thailand</div>
+              </div>
+
+              <div class="photo-slide fade">
+                <img class="slideshow-image" src="images/carlsbad.jpeg" />
+                <div class="photo-caption">Carlsbad, CA</div>
+              </div>
+
+              <div class="photo-slide fade">
+                <img class="slideshow-image" src="images/grand_canyon.jpg" />
+                <div class="photo-caption">Grand Canyon</div>
+              </div>
+
+              <div class="photo-slide fade">
+                <img
+                  class="slideshow-image"
+                  src="images/greetings_from_san_diego.png"
+                />
+                <div class="photo-caption">San Diego, CA</div>
+              </div>
+              <!-- End Photos -->
+
+              <!-- Next/Prev buttons -->
+              <a class="prev" onclick="nextSlide(-1)"
+                ><ion-icon class="arrow" name="caret-back-outline"></ion-icon
+              ></a>
+              <a class="next" onclick="nextSlide(1)"
+                ><ion-icon
+                  class="next-arrow"
+                  name="caret-forward-outline"
+                ></ion-icon
+              ></a>
+            </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <h1 class="section-heading">Contact</h1>
+          <div class="separator"></div>
+          <h4>
+            <ion-icon name="mail-outline"></ion-icon>Email:
+            <a href="mailto:algrn91@gmail.com">algrn91@gmail.com</a>
+          </h4>
+          <h4>
+            <ion-icon name="logo-instagram"></ion-icon>Instagram:
+            <a href="https://www.instagram.com/the.alvin.lee/"
+            target="_blank">the.alvin.lee</a>
+          </h4>
+          <h4>
+            <ion-icon name="logo-linkedin"></ion-icon>LinkedIn:
+            <a href="https://www.linkedin.com/in/alvinzlee/"
+            target="_blank">alvinzlee</a>
+          </h4>
+          <h4>
+            <ion-icon name="logo-github"></ion-icon></ion-icon>Github:
+            <a href="https://github.com/azlee91"
+            target="_blank">azlee91</a>
+          </h4>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer>
+      <div class="container">
+        <div class="eight columns">
+          <i class="material-icons md-24">copyright</i>2020 Alvin Lee
+        </div>
+        <div class="four columns">
+          <a
+            class="u-pull-right"
+            href="https://www.facebook.com/alvin.zh.lee"
+            target="_blank"
+          >
+            <ion-icon class="contact" name="logo-facebook"></ion-icon>
+          </a>
+          <a
+            class="u-pull-right"
+            href="https://www.instagram.com/the.alvin.lee/"
+            target="_blank"
+          >
+            <ion-icon
+              class="contact u-pull-right"
+              name="logo-instagram"
+            ></ion-icon>
+          </a>
+          <a
+            class="u-pull-right"
+            href="https://www.linkedin.com/in/alvinzlee/"
+            target="_blank"
+            ><ion-icon class="contact" name="logo-linkedin"></ion-icon
+          ></a>
+          <a
+          class="u-pull-right"
+          href="https://github.com/azlee91"
+          target="_blank"
+          ><ion-icon class="contact" name="logo-github"></ion-icon
+        ></a>
+        </div>
+      </div>
+    </footer>
     <script
       src="https://code.jquery.com/jquery-3.5.0.min.js"
       integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
